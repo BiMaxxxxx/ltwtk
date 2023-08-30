@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Document</title>
+  <link href="dangky.css" rel="stylesheet">
+  <link href="/style.css" rel="stylesheet">
+
+  <script type="text/javascript" src="dangky.js" charset="utf-8" defer></script>
+
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>VietNam Train Travel  </h1>
+    <p>The Best Way To Travel To Vietnam</p>
+</div>
+  <div class="topnav">
+    <a href="/index.html">Trang chủ </a>
+    <div id="navbar-content">
+      <a href="#">Đặt vé online </a>
+      <a href="/Sưu tập ảnh/bosuutapanh.html">Sưu tập ảnh</a>
+      <a href="/Đăng ký/dangky.html" style="float: right;">Đăng nhập / Đăng ký </a>
+    </div>
+  </div>
+  <div class="line"></div>
+  <div class="container">
+    <form id="form" class="form">
+      <h2>Đăng ký </h2>
+      <div class="form-control">
+        <label for="username">Tên đăng nhập</label>
+        <input type="text" id="username" placeholder="Nhập tên đăng nhập">
+        <small>Error Message</small>
+      </div>
+      <div class="form-control">
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="Nhập email">
+        <small>Error Message</small>
+      </div>
+      <div class="form-control" style="margin:0">
+        <label for="gender">Giới tính</label>
+        <div class="gender" >
+          <div style="display: flex;padding-top: 10px">
+            <span>Nam</span>
+            <input type="radio" name="gender" value="male" id="gender1">
+            <span>Nữ</span>
+            <input type="radio" name="gender" value="female" id="gender2">
+            <small>Error Message</small>
+          </div>
+        </div>
+      </div>
+      <div class="form-control">
+        <label for="phone">Số điện thoại</label>
+        <input type="text" id="phone" placeholder="Nhập số điện thoại">
+        <small>Error Message</small>
+      </div>
+      <div class="form-control">
+        <label for="password">Mật khẩu</label>
+        <input type="password" id="password" placeholder="Nhập mật khẩu">
+        <small>Error Message</small>
+      </div>
+      <div class="form-control">
+        <label for="password2">Nhập lại mật khẩu</label>
+        <input type="password" id="password2" placeholder="Nhập lại mật khẩu">
+        <small>Error Message</small>
+      </div>
+      <div class="form-control">
+        <label for="note">Ghi chú</label>
+        <textarea style="width: 100%;" mame="note" id="note" placeholder=""></textarea>
+        <small>Error Message</small>
+      </div>
+      <button>Đăng ký</button>
+    </form>
+  </div>
+</body>
+
+</html>

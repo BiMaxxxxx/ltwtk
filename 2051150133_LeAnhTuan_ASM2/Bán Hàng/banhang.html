@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Document</title>
+  <link href="banhang.css" rel="stylesheet">
+  <script src="banhang.js"></script>
+  <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+  <div class="header">
+    <h1>VietNam Train Travel  </h1>
+    <p>The Best Way To Travel To Vietnam</p>
+</div>
+  <div class="topnav">
+    <a href="/index.html">Trang chủ </a>
+    <div id="navbar-content">
+      <a href="#">Đặt vé online </a>
+      <a href="/Sưu tập ảnh/bosuutapanh.html">Sưu tập ảnh</a>
+      <a href="/Đăng ký/dangky.html" style="float: right;">Đăng nhập / Đăng ký </a>
+    </div>
+  </div>
+  <div class="panel">
+
+    <h2>Đặt vé</h2>
+    <div>
+      <select onchange="handleSelectChange(event)" id="price-range">
+        <option value="" selected>Chọn mức giá</option>
+        <option value="500000">0 - 500.000</option>
+        <option value="1000000">500.000 - 1.000.000</option>
+        <option value="2000000">1.000.000 - 2.000.0000</option>
+        <!-- <option value="1500-2000">1000 - 1999</option>
+        <option value="2000-2500">2000 - ---</option> -->
+      </select>
+      <div id="product-rows"></div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Tích chọn</th>
+          <th>Chuyến đi</th>
+          <th>Đơn giá</th>
+          <th>Số vé</th>
+          <th>Thành tiền</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="product">
+          <td><input type="checkbox" onchange="handleCheckboxChange(0)"></td>
+          <td> Sài Gòn - Nha Trang </td>
+          <td>250000 VNĐ </td>
+          <td><input type="number" class="quantity" min="1" disabled onchange="calculateProductTotal(0)"></td>
+          <td class="total-price"></td>
+        </tr>
+        <tr class="product">
+          <td><input type="checkbox" onchange="handleCheckboxChange(1)"></td>
+          <td> Sài Gòn - Hà Nội</td>
+          <td>1500000 VNĐ </td>
+          <td><input type="number" class="quantity" min="1" disabled onchange="calculateProductTotal(1)"></td>
+          <td class="total-price"></td>
+        </tr>
+        <tr class="product">
+          <td><input type="checkbox" onchange="handleCheckboxChange(2)"></td>
+          <td>Sài Gòn - Quãng Ngãi</td>
+          <td>550000 VNĐ</td>
+          <td><input type="number" class="quantity" min="1" disabled onchange="calculateProductTotal(2)"></td>
+          <td class="total-price"></td>
+        </tr>
+        <tr class="product">
+          <td><input type="checkbox" onchange="handleCheckboxChange(3)"></td>
+          <td>Sài Gòn - Đà Lạt </td>
+          <td>600000 VNĐ</td>
+          <td><input type="number" class="quantity" min="1" disabled onchange="calculateProductTotal(3)"></td>
+          <td class="total-price"></td>
+        </tr>
+        <tr class="product">
+          <td><input type="checkbox" onchange="handleCheckboxChange(4)"></td>
+          <td> Sài Gòn - Đà Nẵng</td>
+          <td>550000 VNĐ</td>
+          <td><input type="number" class="quantity" min="1" disabled onchange="calculateProductTotal(4)"></td>
+          <td class="total-price"></td>
+        </tr>
+        <tr class="product">
+          <td><input type="checkbox" onchange="handleCheckboxChange(5)"></td>
+          <td> Sài Gòn - Huế</td>
+          <td> 680000 VNĐ</td>
+          <td><input type="number" class="quantity" min="1" disabled onchange="calculateProductTotal(5)"></td>
+          <td class="total-price"></td>
+        </tr>
+      <tfoot>
+        <tr>
+          <td colspan="4">Tổng tiền</td>
+          <td id="total-price">5000</td>
+        </tr>
+      </tfoot>
+      </tbody>
+    </table>
+  </div>
+  <div class="footer">
+    <h4>Website được nhiều người xem nhất - Thuộc khoa CNTT</h4>
+    <h4>Liên hệ</h4>
+                    <p>Điện thoại: 0586472620</p>
+                    <p>Email: 2051150133@ut.edu.vn </p>
+</div>
+</body>
+
+</html>
